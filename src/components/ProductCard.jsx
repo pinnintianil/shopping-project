@@ -4,15 +4,18 @@ import { addToCart } from "../redux/cartSlice";
 function ProductCard({ product }) {
   const dispatch = useDispatch();
   return (
-    <div style={{ border: "1px solid #ddd", padding: "10px", margin: "10px", width: "220px" }}>
-      <img
-        src={product.image}
+    <div className="border p-4 rounded text-center">
+      <img 
+        src={product.image} 
         alt={product.name}
-        style={{ width: "100%", height: "220px", objectFit: "cover" }}
+        className="w-full h-48 object-cover rounded mb-2"
       />
-      <h3>{product.name}</h3>
+      <h3 className="font-bold">{product.name}</h3>
       <p>Rs. {product.price}</p>
-      <button onClick={() => dispatch(addToCart(product))}>
+      <button 
+        onClick={() => dispatch(addToCart(product))}
+        className="bg-blue-500 text-white px-4 py-2 rounded mt-2"
+      >
         Add To Cart
       </button>
     </div>
