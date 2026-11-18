@@ -26,7 +26,7 @@ function Cart() {
       ))}
       <div className="flex justify-between items-center mt-4">
         <h3 className="text-xl font-bold">Total: Rs. {total}</h3>
-        <button className="bg-green-500 text-white px-6 py-2 rounded">Checkout</button>
+        <button  className="bg-green-500 text-white px-6 py-2 rounded">Checkout</button>
       </div>
     </div>
   );
