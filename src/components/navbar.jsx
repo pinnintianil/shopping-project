@@ -7,6 +7,7 @@ function Navbar() {
     <div style={{ display: "flex", justifyContent: "space-between", background: "black", color: "white", padding: "12px 20px" }}>
       <Link to="/" style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}>Anil Fashion</Link>
       <Link to="/cart" style={{ color: "white", textDecoration: "none" }}>Cart ({items.length})</Link>
+      <Link to="/login" style={{ color: "white", textDecoration: "none" }}>Login</Link>
     </div>
   );
 }
